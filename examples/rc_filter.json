@@ -1,0 +1,72 @@
+{
+  "name": "RC Low-pass Filter",
+  "description": "Simple RC low-pass filter circuit for frequency analysis",
+  "version": "1.0",
+  "components": [
+    {
+      "id": "R1",
+      "type": "Resistor",
+      "parameters": {
+        "resistance": 1000.0
+      },
+      "position": {
+        "x": -2,
+        "y": 1,
+        "z": 0
+      }
+    },
+    {
+      "id": "C1", 
+      "type": "Capacitor",
+      "parameters": {
+        "capacitance": 1e-6
+      },
+      "position": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      }
+    },
+    {
+      "id": "V1",
+      "type": "VoltageSource",
+      "parameters": {
+        "voltage": 5.0,
+        "frequency": 1000.0
+      },
+      "position": {
+        "x": -4,
+        "y": 1,
+        "z": 0
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "wire1",
+      "from": "V1",
+      "to": "R1",
+      "from_node": "positive",
+      "to_node": "input"
+    },
+    {
+      "id": "wire2", 
+      "from": "R1",
+      "to": "C1",
+      "from_node": "output",
+      "to_node": "input"
+    },
+    {
+      "id": "wire3",
+      "from": "C1",
+      "to": "V1", 
+      "from_node": "output",
+      "to_node": "negative"
+    }
+  ],
+  "simulation": {
+    "duration": 0.01,
+    "timestep": 1e-6,
+    "type": "transient"
+  }
+}
