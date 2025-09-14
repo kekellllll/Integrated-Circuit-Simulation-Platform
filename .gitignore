@@ -1,0 +1,45 @@
+# Build directories
+build/
+bin/
+lib/
+dist/
+
+# C++ build artifacts
+*.o
+*.obj
+*.lib
+*.dll
+*.exe
+*.so
+*.dylib
+*.a
+
+# CUDA build artifacts
+*.cubin
+*.ptx
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Test results
+test-results/
+coverage/

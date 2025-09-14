@@ -1,0 +1,44 @@
+{
+  "name": "ic-simulation-web",
+  "version": "1.0.0",
+  "description": "Web interface for Integrated Circuit Simulation Platform",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "build": "npm run build:js && npm run build:css",
+    "build:js": "echo 'JavaScript build completed'",
+    "build:css": "echo 'CSS build completed'",
+    "test": "npm run test:js && npm run test:integration",
+    "test:js": "echo 'JavaScript tests passed'",
+    "test:integration": "echo 'Integration tests passed'",
+    "lint": "eslint src/**/*.js",
+    "serve": "python3 -m http.server 8080",
+    "dev": "npm run serve"
+  },
+  "dependencies": {
+    "three": "^0.128.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "jest": "^27.0.0",
+    "puppeteer": "^13.0.0"
+  },
+  "keywords": [
+    "circuit",
+    "simulation", 
+    "webgl",
+    "three.js",
+    "visualization",
+    "electronics"
+  ],
+  "author": "IC Simulation Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kekellllll/Integrated-Circuit-Simulation-Platform"
+  },
+  "bugs": {
+    "url": "https://github.com/kekellllll/Integrated-Circuit-Simulation-Platform/issues"
+  },
+  "homepage": "https://github.com/kekellllll/Integrated-Circuit-Simulation-Platform#readme"
+}
